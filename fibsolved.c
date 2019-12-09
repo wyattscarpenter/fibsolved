@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-unsigned long long fib(int n){return (unsigned long long[]){
+unsigned long long fib(unsigned int n){return (unsigned long long[]){0,
 1,
 1,
 2,
@@ -108,5 +108,5 @@ int fibgenerator(void) {
 }
 
 void main(void){
-  printf("%llu\n", fib(92));
+  printf("%llu\n", fib(93));
 }
