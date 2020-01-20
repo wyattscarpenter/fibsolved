@@ -118,6 +118,6 @@ int fibgenerator(void) {
   return 0;
 }
 
-void main(void){
+int main(void){
   printf("%llu\n", fib(93));
 }
