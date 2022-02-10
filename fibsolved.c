@@ -11,6 +11,29 @@ unsigned long long perfect(unsigned int n){return (unsigned long long[]){0,
 2305843008139952128}[n];
 }
 
+unsigned long long factorial(unsigned int n){return (unsigned long long[]){1,//0! is actually defined as 1, neat.
+1,
+2,
+6,
+24,
+120,
+720,
+5040,
+40320,
+362880,
+3628800,
+39916800,
+479001600,
+6227020800,
+87178291200,
+1307674368000,
+20922789888000,
+355687428096000,
+6402373705728000,
+121645100408832000,
+2432902008176640000}[n]; //20!
+}
+
 unsigned long long fib(unsigned int n){return (unsigned long long[]){0,
 1,
 1,
@@ -104,7 +127,7 @@ unsigned long long fib(unsigned int n){return (unsigned long long[]){0,
 2880067194370816120,
 4660046610375530309,
 7540113804746346429,
-12200160415121876738}[n];
+12200160415121876738ull}[n]; //fib(93)
 }
 
 int fibgenerator(void) {
