@@ -141,6 +141,10 @@ int fibgenerator(void) {
   return 0;
 }
 
+unsigned long long fibnaive(unsigned int n){ //purely for benchmarking purposes
+  return !n ? 0 : n==1 ? 1 : fibnaive(n-1) + fibnaive(n-2);
+}
+
 int main(void){
   printf("%llu\n", fib(93));
 }
